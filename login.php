@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $inputUsername = $_POST['username'];
     $inputPassword = $_POST['password'];
 
-    $query = "SELECT * FROM users WHERE username = ?";//플레이스 홀더 나중에 값으로 대체
+    //플레이스 홀더 나중에 값으로 대체
+    $query = "SELECT * FROM users WHERE username = ?";
     $stmt = $db->prepare($query);
     $stmt->bind_param("s", $inputUsername);//? 값이 대체 됨
     $stmt->execute();

@@ -156,8 +156,8 @@ exercise-log-container button:hover {
 
 .add-button {
   position: absolute;
-  top: 10px; /* 원하는 위치로 조절하세요 */
-  right: 50px; /* 원하는 위치로 조절하세요 */
+  top: 10px; 
+  right: 50px; 
 }
 
 .add-button button {
